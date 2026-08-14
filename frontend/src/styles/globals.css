@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0e0e10;
+
+  --color-surface: #1a1a1e;
+
+  --color-surface-secondary: #26262b;
+
+  --color-primary: #7c3aed;
+
+  --color-primary-hover: #6d28d9;
+
+  --color-success: #22c55e;
+
+  --color-text-primary: #f4f4f5;
+
+  --color-text-secondary: #a1a1aa;
+
+  --color-text-tertiary: #52525b;
+
+  --color-border: #2f2f34;
+
+  --font-sans: "Inter", sans-serif;
+
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+
+  background: var(--color-background);
+
+  color: var(--color-text-primary);
+
+  font-family: var(--font-sans);
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+}
+@keyframes growBar {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: var(--bar-width);
+  }
+}
